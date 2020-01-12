@@ -7,7 +7,7 @@ variable "env" {}
 variable "region" {}
 
 variable "instance_type" {
-    type = "map"
+    type = map
     default = {
         dev="t2.micro"
         test="t2.medium"
@@ -16,7 +16,7 @@ variable "instance_type" {
 }
 #-------------------------------------
 variable "amitype2" {
-    type = "map"
+    type = map
 
     default = {        
         us-east-1 = "ami-062f7200baf2fa504"
